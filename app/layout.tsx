@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import Link from "next/link";
+import facebook from '@/public/assets/images/Facebook_f_logo_(2021).svg.webp'
+import insta from '@/public/assets/images/instagram-logo-instagram-icon-transparent-free-png.webp'
+import x from '@/public/assets/images/x_logo_PNG18.png'
+import logo from '@/public/assets/images/logo.svg'
+import { CartProvider } from "@/app/context/cartContext.jsx"; // adjust path
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +32,84 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+
+         <CartProvider>
+          {children}
+        </CartProvider>
+
+
+
+        <footer>
+
+          <div className="footer-left">
+
+            <Image
+              src={logo}
+              alt=""
+            />
+
+            <p className="bbb">
+              Audiophile is an all in one stop to fulfill your audio needs.
+              Were a small team of music lovers and sound specialists
+              who are devoted to helping you get the most out of personal audio.
+              Come and visit our demo facility - we’re open 7 days a week.
+            </p>
+
+            <p>Copyright 2026. All Rights Reserved</p>
+
+          </div>
+
+          <div className="footer-right">
+
+            <div className="nav-location">
+
+              <Link href={'/'}>
+                <span>HOME</span>
+              </Link>
+
+
+              <Link href={'/headphones'}>
+                <span>HEADPHONES</span>
+              </Link>
+
+              <Link href={'/speakers'}>
+                <span>SPEAKERS</span>
+              </Link>
+
+
+              <Link href={'/earphones'}>
+                <span>EARPHONES</span>
+              </Link>
+
+            </div>
+
+            <div>
+
+              <Image
+                src={facebook}
+                alt=""
+                width={40}
+              />
+
+              <Image
+                src={insta}
+                alt=""
+                width={40}
+              />
+
+              <Image
+                src={x}
+                alt=""
+                width={40}
+              />
+
+            </div>
+
+          </div>
+
+        </footer>
+      </body>
     </html>
   );
 }
