@@ -11,7 +11,12 @@ import Navbar from "../../navbar";
 import Link from "next/link";
 import AddToCartButton from "../../addtocart";
 import yx1 from '@/public/assets/images/yx1-small.jpg'
-export const dynamic = 'force-dynamic';
+
+export async function generateStaticParams() {
+  return products.map((product) => ({
+    slug: product.slug,
+  }));
+}
 
 
 
