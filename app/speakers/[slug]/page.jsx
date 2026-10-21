@@ -11,6 +11,12 @@ import Navbar from "../../navbar";
 import Link from "next/link";
 import AddToCartButton from "../../addtocart";
 
+export async function generateStaticParams() {
+  return products.map((product) => ({
+    slug: product.slug,
+  }));
+}
+
 
 
 export default async function ProductPage({ params }) {
