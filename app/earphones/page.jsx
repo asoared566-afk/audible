@@ -9,6 +9,8 @@ import arrow from '@/public/assets/images/icon-arrow-right.svg'
 import person from '@/public/assets/images/image-best-gear.jpg'
 import earphoneyx1 from '@/public/assets/images/image-yx1-earphones.jpg'
 import Navbar from "../navbar";
+import yx1 from '@/public/assets/images/yx1-small.jpg'
+
 
 export default function Earphone() {
     return (
@@ -28,9 +30,17 @@ export default function Earphone() {
                 <div className="xx99">
 
                     <Image
+                        src={yx1}
+                        alt=""
+                        width={400}
+                        className="small"
+                    />
+
+                    <Image
                         src={earphoneyx1}
                         alt=""
                         width={550}
+                        className="big"
                     />
 
                     <div>

@@ -11,6 +11,7 @@ import Link from "next/link";
 import { useState } from "react";
 import cart from '@/public/assets/images/cart-contain.png'
 import cartIcon from '@/public/assets/images/icon-cart.svg'
+import ham from '@/public/assets/images/icon-hamburger.svg'
 
 
 
@@ -118,14 +119,23 @@ export default function Navbar() {
 
             <div className="navbar">
 
+                <div>
+                    <Link href={'/'}>
+                        <Image
+                            src={ham}
+                            alt=""
+                            className="ham"
+                        />
+                    </Link>
 
+                    <Link href={'/'}>
+                        <Image
+                            src={logo}
+                            alt=""
+                        />
+                    </Link>
+                </div>
 
-                <Link href={'/'}>
-                    <Image
-                        src={logo}
-                        alt=""
-                    />
-                </Link>
 
                 <div className="all-links">
 

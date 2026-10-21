@@ -10,6 +10,8 @@ import person from '@/public/assets/images/image-best-gear.jpg'
 import Navbar from "../../navbar";
 import Link from "next/link";
 import AddToCartButton from "../../addtocart";
+import yx1 from '@/public/assets/images/yx1-small.jpg'
+
 
 
 
@@ -37,11 +39,21 @@ export default async function ProductPage({ params }) {
 
         <div className="xx99">
 
+
+          <Image
+            src={product.small}
+            alt=""
+            width={400}
+            height={200}
+            className="small"
+          />
+
           <Image
             src={product.image}
             alt=""
             width={550}
             height={550}
+            className="big"
           />
 
           <div>
@@ -81,14 +93,34 @@ export default async function ProductPage({ params }) {
             <Image
               src={product.gallery[0]}
               alt=""
+              width={180}
+              height={110}
+              className="small"
+            />
+
+            <Image
+              src={product.gallery[0]}
+              alt=""
               width={450}
               height={280}
+              className="big"
             />
+
+            <Image
+              src={product.gallery[1]}
+              alt=""
+              width={180}
+              height={110}
+              className="small"
+            />
+
+
             <Image
               src={product.gallery[1]}
               alt=""
               width={450}
               height={280}
+              className="big"
             />
 
           </div>
@@ -96,8 +128,17 @@ export default async function ProductPage({ params }) {
           <Image
             src={product.gallery[2]}
             alt=""
+            width={240}
+            height={243}
+            className="small"
+          />
+
+          <Image
+            src={product.gallery[2]}
+            alt=""
             width={650}
             height={582}
+            className="big"
           />
 
         </div>

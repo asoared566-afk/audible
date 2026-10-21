@@ -13,13 +13,14 @@ import Link from "next/link";
 
 export default function Checkout() {
     const [paymentMethod, setPaymentMethod] = useState("emoney");
-    const { carts, quantity, setCarts } = useCart();
+    const { carts, quantity, setCarts, setQuantity } = useCart();
 
     const [isOpen, setIsOpen] = useState(false)
 
     function backToHome() {
         setCarts([])
         setIsOpen(false)
+        setQuantity(0)
     }
 
 

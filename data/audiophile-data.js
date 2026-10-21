@@ -11,6 +11,7 @@ export const products = [
     thumbnail: "/assets/images/thumbnail-xx99-mark-two-headphones.webp" ,
 
     image: "/assets/images/image-xx99-mark-two.jpg",
+    small: "/assets/images/xx992-small.jpg",
 
     description:
       `The new XX99 Mark II headphones is the pinnacle of pristine audio. 
@@ -57,6 +58,7 @@ export const products = [
     isNew: false,
     thumbnail: "/assets/images/thumbnail-xx99-mark-one-headphones.webp" ,
     image: "/assets/images/image-xx99-mark-one.jpg",
+    small: "/assets/images/xx991-small.jpg",
 
     description:
       `As the gold standard for headphones, the classic XX99 Mark 
@@ -105,6 +107,7 @@ export const products = [
     thumbnail: "/assets/images/thumbnail-xx59-headphones.webp" ,
 
     image: "/assets/images/image-xx59.jpg",
+    small: "/assets/images/xx59-small.jpg",
 
     description:
       `Enjoy your audio almost anywhere and customize your listening
@@ -156,6 +159,7 @@ export const products = [
     thumbnail: "/assets/images/thumbnail-earphone.webp" ,
 
     image: "/assets/images/image-yx1-earphones.jpg",
+    small: "/assets/images/yx1-small.jpg",
 
     description:
       `Tailor your listening experience with bespoke dynamic 
@@ -208,6 +212,7 @@ export const products = [
     thumbnail: "/assets/images/thumbnail-zx9-speaker.webp" ,
 
     image: "/assets/images/image-zx9.jpg",
+    small: "/assets/images/zx9-small.jpg",
 
     description:
       `Upgrade your sound system with the all new ZX9 active speaker. 
@@ -260,6 +265,7 @@ export const products = [
 
 
     image: "/assets/images/image-zx7.jpg",
+    small: "/assets/images/zx7-small.jpg",
 
     description:
       `Stream high quality sound wirelessly with minimal

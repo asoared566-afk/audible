@@ -11,6 +11,9 @@ import earphone from '@/public/assets/images/image-earphones.png'
 import arrow from '@/public/assets/images/icon-arrow-right.svg'
 import person from '@/public/assets/images/image-best-gear.jpg'
 import speakerZx9 from '@/public/assets/images/image-zx9.jpg'
+import xx992 from '@/public/assets/images/xx992-small.jpg'
+import xx991 from '@/public/assets/images/xx991-small.jpg'
+import xx59 from '@/public/assets/images/xx59-small.jpg'
 
 import Navbar from "../navbar";
 
@@ -34,9 +37,17 @@ export default function Headphones() {
                 <div className="xx99">
 
                     <Image
+                        src={xx992}
+                        alt=""
+                        className="small"
+                        width={400}
+                    />
+
+                    <Image
                         src={headphone1}
                         alt=""
                         width={550}
+                        className="big"
                     />
 
                     <div>
@@ -57,6 +68,13 @@ export default function Headphones() {
 
                 <div className="xx99">
 
+                    <Image
+                        src={xx991}
+                        alt=""
+                        className="small"
+                        width={400}
+                    />
+
                     <div>
                         <h1>XX99 Mark I Headphones</h1>
                         <p>
@@ -71,10 +89,13 @@ export default function Headphones() {
 
                     </div>
 
+
+
                     <Image
                         src={headphone2}
                         alt=""
                         width={550}
+                        className="big"
                     />
 
                 </div>
@@ -82,9 +103,17 @@ export default function Headphones() {
                 <div className="xx99">
 
                     <Image
+                        src={xx59}
+                        alt=""
+                        className="small"
+                        width={400}
+                    />
+
+                    <Image
                         src={headphone3}
                         alt=""
                         width={550}
+                        className="big"
                     />
 
                     <div>

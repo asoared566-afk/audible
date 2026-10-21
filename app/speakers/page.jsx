@@ -9,6 +9,8 @@ import arrow from '@/public/assets/images/icon-arrow-right.svg'
 import speakerZx9 from '@/public/assets/images/image-zx9.jpg'
 import person from '@/public/assets/images/image-best-gear.jpg'
 import speakerzx7 from '@/public/assets/images/image-zx7.jpg'
+import zx9 from '@/public/assets/images/zx9-small.jpg'
+import zx7 from '@/public/assets/images/zx7-small.jpg'
 
 import Navbar from "../navbar";
 
@@ -30,9 +32,17 @@ export default function Speakers() {
                 <div className="xx99">
 
                     <Image
+                        src={zx9}
+                        alt=""
+                        width={400}
+                        className="small"
+                    />
+
+                    <Image
                         src={speakerZx9}
                         alt=""
                         width={550}
+                        className="big"
                     />
 
                     <div>
@@ -53,6 +63,13 @@ export default function Speakers() {
 
                 <div className="xx99">
 
+                     <Image
+                        src={zx7}
+                        alt=""
+                        width={400}
+                        className="small"
+                    />
+
                     <div>
                         <h1>ZX7 Speaker</h1>
                         <p>
@@ -70,6 +87,7 @@ export default function Speakers() {
                         src={speakerzx7}
                         alt=""
                         width={550}
+                        className="big"
                     />
 
                 </div>

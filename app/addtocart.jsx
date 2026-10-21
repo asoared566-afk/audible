@@ -11,7 +11,7 @@ export default function AddToCartButton({product}) {
   return (
     <div>
       {/* optional quantity controls */}
-      <button onClick={() => addToCart(product, qty)}>
+      <button className="add-btn" onClick={() => addToCart(product, qty)}>
         ADD TO CART
       </button>
     </div>

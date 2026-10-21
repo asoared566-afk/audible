@@ -84,7 +84,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
             </div>
 
-            <div>
+            <div className="social-media">
 
               <Image
                 src={facebook}
