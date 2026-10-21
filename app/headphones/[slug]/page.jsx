@@ -11,6 +11,15 @@ import Navbar from "../../navbar";
 import Link from "next/link";
 import AddToCartButton from "../../addtocart";
 
+export async function generateStaticParams() {
+  // Filter for headphones or map all products depending on your data structure
+  return products
+    .filter((product) => product.category === "headphones") // Adjust this filter if your data structure differs
+    .map((product) => ({
+      slug: product.slug,
+    }));
+}
+
 
 export default async function ProductPage({ params }) {
   const { slug } = await params;
